@@ -17,7 +17,7 @@ MonoBehaviour:
   description: "Help Simon and his colony by pressing bees in the correct order to
     reduce the effects of their Color Flashing Syndrome.\n\nHTML: https://ktane.timwi.de/HTML/Simon%27s%20Swarm.html\nPDF:
     https://ktane.timwi.de/PDF/Simon%27s%20Swarm.pdf\n\nSimon\u2019s Swarm (simonsSwarmModule)
-    v1.0.0\nModule and Concept by eXish\nTwitch Plays supported"
-  version: 1.0.0
+    v1.0.1\nModule and Concept by eXish\nTwitch Plays supported"
+  version: 1.0.1
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 450af957359bc1d4cbfa9629e0b83143, type: 3}
