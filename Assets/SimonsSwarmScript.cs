@@ -30,6 +30,7 @@ public class SimonsSwarmScript : MonoBehaviour {
     private bool firstPress;
     private bool activated;
     private bool cbEnabled;
+    private bool addedB;
 
     static int moduleIdCounter = 1;
     int moduleId;
@@ -72,7 +73,10 @@ public class SimonsSwarmScript : MonoBehaviour {
         for (int i = 0; i < 3; i++)
             AddToString(i);
         if (bzz.EndsWith("z"))
+        {
+            addedB = true;
             bzz += "B";
+        }
         Debug.LogFormat("[Simon's Swarm #{0}] String Bzz for stage {1} is: {2}", moduleId, stage + 1, bzz);
         GetPresses();
         Debug.LogFormat("[Simon's Swarm #{0}] Bees to press for stage {1} going clockwise from north: {2}", moduleId, stage + 1, answer.Join(", "));
@@ -115,9 +119,17 @@ public class SimonsSwarmScript : MonoBehaviour {
                     }
                     flashes.Add(UnityEngine.Random.Range(0, 5));
                     Debug.LogFormat("[Simon's Swarm #{0}] New flash: {1}", moduleId, flashes.Last());
+                    if (addedB)
+                    {
+                        bzz = bzz.Substring(0, bzz.Length - 1);
+                        addedB = false;
+                    }
                     AddToString(2 + stage);
                     if (bzz.EndsWith("z"))
+                    {
                         bzz += "B";
+                        addedB = true;
+                    }
                     Debug.LogFormat("[Simon's Swarm #{0}] String Bzz for stage {1} is: {2}", moduleId, stage + 1, bzz);
                     GetPresses();
                     Debug.LogFormat("[Simon's Swarm #{0}] Bees to press for stage {1} going clockwise from north: {2}", moduleId, stage + 1, answer.Join(", "));
