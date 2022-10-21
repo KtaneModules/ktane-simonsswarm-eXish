@@ -16,7 +16,7 @@ public class SimonsSwarmScript : MonoBehaviour {
     public Sprite[] sprites;
     public TextMesh[] cbTexts;
 
-    private readonly string[] beeNames = { "zBBBzBz", "zzzBBBBz", "BzzBBz", "zzzBzBz", "zBBzBB", "zzBBzB", "zzBBzzzB", "BzBzzzzB", "BBBzBzz", "BBBzzzz", "BzzzzBzzz", "BzzzzBzB", "zBBzzBB", "BBBzzzzB", "BzBzzzB", "zzzBzB", "zBzBzzz", "BzzzBzzzB", "zBzzBzzzB", "zzBzBzB", "zBzzzz", "BBzzzBB", "zzBzzBz", "zBBBzzB", "BzBBBzzz", "BBBBzzz", "zzBzzBBzB", "zBBzBzB", "BzzzBzzz", "zzzBBzB", "zBzzBB", "BBzzBB", "zzBzzzBB", "zzzBzzB", "zBzBBz", "zBzBBz", "BzzzBz", "zzBzzzzBB", "zzzzBBz", "zBzzzB", "zBBBzzzB", "BzzBzzB" };
+    private readonly string[] beeNames = { "zBBBzBz", "zzzBBBBz", "BzzBBz", "zzzBzBz", "zBBzBB", "zzBBzB", "zzBBzzzB", "BzBzzzzB", "BBBzBzz", "BBBzzzz", "BzzzzBzzz", "BzzzzBzB", "zBBzzBB", "BBBzzzzB", "BzBzzzB", "zzzBzB", "zBzBzzz", "BzzzBzzzB", "zBzzBzzzB", "zzBzBzB", "zBzzzz", "BBzzzBB", "zzBzzBz", "zBBBzzB", "BzBBBzzz", "BBBBzzz", "zzBzzBBzB", "zBBzBzB", "BzzzBzzz", "zzzBBzB", "zBzzBB", "BBzzBB", "zzBzzzBB", "zzzBzzB", "zBzBBz", "BBzzBBz", "BzzzBz", "zzBzzzzBB", "zzzzBBz", "zBzzzB", "zBBBzzzB", "BzzBzzB" };
     private readonly string[] typeNames = { "Honeybee", "Carpenter Bee", "Bumblebee", "Mason Bee", "Leafcutter Bee", "Squash Bee", "Blueberry Bee" };
     private readonly string[] colorNames = { "Red", "Green", "Blue", "Yellow", "Cyan", "Magenta" };
     private readonly Color[] colors = { new Color(1, 0, 0), new Color(0, 1, 0), new Color(0, 0, 1), new Color(1, 1, 0), new Color(0, 1, 1), new Color(1, 0, 1) };
