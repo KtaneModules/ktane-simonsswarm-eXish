@@ -303,6 +303,7 @@ public class SimonsSwarmScript : MonoBehaviour {
 
     IEnumerator TwitchHandleForcedSolve()
     {
+        while (!activated) yield return true;
         for (int i = stage; i < 3; i++)
         {
             int end = answer.Count;
